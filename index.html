@@ -6,12 +6,43 @@
     <title>Aire Exec</title>
 </head>
 <header class="hero">
-    <h1>
+    <h1 class="app-title">
  <!-- icon to go here--> <i class=""></i> Aire Exec
     </h1>
     </header>
 <body>  
-    <h2>Looking for a last minute flight? We got you covered. </h2>
+    <h2>Need a last minute flight? We've got you covered. </h2>
+
+  <main class="flex-row justify-space-between">
+    <div class="col-12 col-md-4">
+
+      <div class="card">
+        <h3 class="card-header">Search By Destination</h3>
+        <form id="user-search" class="card-body">
+          <label class="form-label" for="destination">Where to?</label>
+          <input destination="destination" id="destination" type="text" autofocus="true" class="form-input" />
+          <button type="submit" class="btn">Search</button>
+        </form>
+      </div>
+
+      <div class="card">
+        <h3 class="card-header">Search By Airport</h3>
+        <div id="language-buttons" class="card-body">
+          <button airport-name="yyz" class="btn">YYZ-Toronto</button>
+          <button airport-name="ykf" class="btn">YKF-KW Airport</button>
+          <button airport-name="hlz" class="btn">HLZ-Hamilton Aiport</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-8">
+      <h2 class="subtitle">Showing Flights for: <span id="flight-search-term"></span></h2>
+      <!-- TODO: display search results-->
+      <div id="flights-container" class="list-group"></div>
+    </div>
+  </main>
+
+  <script src="./assets/js/script.js"></script>
 </body>
 <footer>
 </footer>
