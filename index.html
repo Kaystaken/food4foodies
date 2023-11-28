@@ -1,63 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-    rel="stylesheet"
-    href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Aire Exec</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>AireExec</title>
 </head>
-<header class="hero">
+
+<body> 
+  <header class="hero">
     <h1 class="app-title">
- <!-- icon to go here--> <i class=""></i> Aire Exec
+    <!-- icon to go here-->
+      <i class=""></i>
+      Aire Exec
     </h1>
-    </header>
-<body>  
-    <h2>Need a last minute flight? We've got you covered. </h2>
-
-  <main class="flex-row justify-space-between">
-    <div class="col-12 col-md-4">
-
-      <div class="card">
-        <h3 class="card-header">Search By Destination</h3>
-        <form id="user-search" class="card-body">
-          <label class="form-label" for="destination">Where to?</label>
-          <input destination="destination" id="destination" type="text" autofocus="true" class="form-input" />
-          <button type="submit" class="btn">Search</button>
-        </form>
-        <div class="row py-3">
-            <label for="date" class="col-sm-4 col-form-label">Departure Date: </label>
-            <div class="col-sm-8">
-              <input
-                type="text"
-                class="form-control"
-                id="datepicker"
-                autocomplete="off"
-              />
-            </div>
-      </div>
-
-      <div class="card">
-        <h3 class="card-header">Search By Airport</h3>
-        <div id="airports" class="card-body">
-          <button airport-name="yyz" class="btn">YYZ-Toronto</button>
-          <button airport-name="ykf" class="btn">YKF-KW Airport</button>
-          <button airport-name="hlz" class="btn">HLZ-Hamilton Aiport</button>
-        </div>
+  </header>
+  <!-- we can change what we want to go here--> 
+  <h2>Need a last minute flight? We've got you covered.</h2>
+  
+  <div class="card">
+    <h3 class="card-header">Search By Destination</h3>
+    <form id="user-search" class="card-body">
+      <label class="form-label" for="destination">Where to?</label>
+      <input destination="destination" id="destination" type="text" autofocus="true" class="form-input" />
+      <button type="submit" class="btn">Search</button>
+    </form>
+    <div class="row py-3">
+      <label for="date" class="col-sm-4 col-form-label">Departure Date: </label>
+      <div class="col-sm-8">
+        <input
+          type="text"
+          class="form-control"
+          id="datepicker"
+          autocomplete="off"
+        />
       </div>
     </div>
+  </div>
 
+  <div class="card">
+    <h3 class="card-header">Search By Airport</h3>
+    <div id="airports" class="card-body">
+      <button airport-name="yyz" class="btn">YYZ-Toronto</button>
+      <button airport-name="ykf" class="btn">YKF-KW Airport</button>
+      <button airport-name="hlz" class="btn">HLZ-Hamilton Aiport</button>
+    </div>
     <div class="col-12 col-md-8">
       <h2 class="subtitle">Available Flights<span id="flight-search-form"></span></h2>
-      <!-- TODO: display search results-->
       <div id="flights-container" class="list-group"></div>
     </div>
- </main>
- <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
- <!-- jQuery UI <script> tag -->
- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="./assets/js/script.js"></script>
-    </body>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
 </html>
