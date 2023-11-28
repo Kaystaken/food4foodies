@@ -9,7 +9,6 @@
 <body>
   <header>
     <h1>Food4Foodies</h1>
-    <h2>Haaaiii Foodies!!!</h2>
     <nav>
       <ul>
           <li><a href="#search">Search Here</a></li>
@@ -19,8 +18,23 @@
     </nav>
   </header>
   <main>
+    <h2>Haaaiii Foodies!!!</h2>
     <section>
         <article id="search">
+            <h2> Let's find a new or favourite recipe</h2>
+            <div class="flex-row align-center justify-center min-100-vh bg-primary">
+                <div class="col-12 col-md-9 flex-column align-center bg-light p-5">
+                  <form id="search-form" class="form w-100">
+                    <input id="search-input" class="form-input w-100" type="text" placeholder="Search">
+                    <button class="btn btn-info btn-block">Search</button>
+                  </form>
+                </div>
+            
+                <div class="col-12 col-md-9 p-3 text-light">
+                    <h2>Showing results for <span id="result-text"></span></h2>
+                    <div id="result-content"></div>
+                </div>
+              </div>
             <aside>
                 <img>
                 <!-- image here (link in quotes below and delete closing tag on image above)--> 
@@ -29,7 +43,6 @@
                 />
             </aside>
             <div class="search">
-                <h2> Let's find a new or favourite recipe</h2>
                 <div>
                 <!--add modal with search and filters here-->
                 </div>
@@ -40,7 +53,7 @@
         <article id="images">
             <h2>Images</h2>
             <div>
-                <p>Check out some pictures of recipes here</p>
+                <h2>Check out some pictures of recipes here</>
                 <!-- this image is bigger so it got its own id-->
                 <div id="top-image">
                     <ul>
