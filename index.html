@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,10 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link ref="tailwindcss" href="/tailwind.config.js/tailwind.config.js">
     <link href="/images/favicon.png" rel="icon" type="image/png">
+    <link href="./Assets/style.css" rel="stylesheet">
     <title>Food 4 Foodies</title>
 </head>
+
 <body class="font-sans bg-gray-100">
 
     <!-- Navigation -->
@@ -19,59 +22,64 @@
                 <li><a href="/" class="hover:text-#ffedd5">Home</a></li>
                 <li><a href="/recipes.html" class="hover:text-yellow-400 font-bold">Recipes</a></li>
                 <li><a class="hover:text-gray-500" href="#">About Us</a></li>
-              <li><a class="hover:text-gray-500" href="#">Speak To A Nutritionist</a></li>
-              <li><a class="hover:text-gray-500" href="#">Contact Us</a></li>
+                <li><a class="hover:text-gray-500" href="#">Speak To A Nutritionist</a></li>
+                <li><a class="hover:text-gray-500" href="#">Contact Us</a></li>
             </ul>
         </div>
     </nav>
-    
-      <!-- Hero Section with Image and Overlay -->
-    <section class="relative h-screen flex items-center justify-center overflow-hidden">
-      <!-- Image Container -->
-      <div class="absolute inset-0 z-0">
-          <img src="images/hero.jpg" alt="Hero Image" class="w-full h-full object-cover"/>
-      </div>
 
-      <!-- Image Overlay -->
-      <div class="absolute inset-0 bg-black opacity-50"></div>
-      
-      <!-- Content Container -->
-      <div class="container mx-auto text-center relative z-10 text-white">
-          <h1 class="text-4xl lg:text-6xl font-bold mb-4">The Ultimate Foodie Experience</h1><br><br>
-          <a href="/recipes.html" class="bg-white text-blue-500 px-8 py-3 rounded-full inline-block font-semibold hover:bg-blue-600 hover:text-white">Search Recipes</a>
-      </div>
-  </section>
-    
+    <!-- Hero Section with Image and Overlay -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+        <!-- Image Container -->
+        <div class="absolute inset-0 z-0">
+            <img src="images/hero.jpg" alt="Hero Image" class="w-full h-full object-cover" />
+        </div>
+
+        <!-- Image Overlay -->
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+
+        <!-- Content Container -->
+        <div class="container mx-auto text-center relative z-10 text-white">
+            <h1 class="text-4xl lg:text-6xl font-bold mb-4">The Ultimate Foodie Experience</h1><br><br>
+            <a href="/recipes.html"
+                class="bg-white text-blue-500 px-8 py-3 rounded-full inline-block font-semibold hover:bg-blue-600 hover:text-white">Search
+                Recipes</a>
+        </div>
+    </section>
+
     <!-- Main Content (Recipes) -->
     <section class="container mx-auto my-8">
         <h1 class="text-3xl font-bold mb-4">Healthy Recipes</h1>
+        <button href="#" class="text-pink-500 hover:underline font-semibold" id="breakfastSearch">Breakfast</button>
+        <button href="#" class="text-pink-500 hover:underline font-semibold" id="lunchSearch">Lunch</button>
+        <button href="#" class="text-pink-500 hover:underline font-semibold" id="dinnerSearch">Dinner</button>
 
         <!-- Recipe Cards -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div id="recipeCards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Recipe Card 1 -->
-            <div class="bg-white p-4 shadow">
-                <img src="/images/breakfast-1.jpg" alt="Breakfast Image" class="w-full h-38 object-cover mb-4 rounded-lg">
+            <!--<div id="breakfastCard" class="bg-white p-4 shadow">
+                <img src="/images/breakfast-1.jpg" alt="Breakfast Image"
+                    class="w-full h-38 object-cover mb-4 rounded-lg">
                 <h2 class="text-xl font-bold mb-2">Breakfast / Brunch Ideas</h2>
                 <p class="text-gray-600 mb-4">A refreshing salad with ripe avocados, tomatoes, and greens.</p>
-                <a href="#" class="text-pink-500 hover:underline font-semibold">View Recipe</a>
-            </div>
-
+                <button href="#" class="text-pink-500 hover:underline font-semibold" id="breakfastSearch">View
+                    Recipes</button>
+            </div> -->
             <!-- Recipe Card 2 -->
-            <div class="bg-white p-4 shadow">
+            <!-- <div class="bg-white p-4 shadow">
                 <img src="/images/lunch.jpg" alt="Lunch Image" class="w-full h-38 object-cover mb-4 rounded-lg">
                 <h2 class="text-xl font-bold mb-8">Lunch Ideas</h2>
                 <p class="text-gray-600 mb-4">A protein-packed bowl with quinoa, vegetables, and a tahini dressing.</p>
-                <a href="#" class="text-pink-500 hover:underline font-semibold">View Recipe</a>
-            </div>
-
+                <a href="#" class="text-pink-500 hover:underline font-semibold">View Recipes</a>
+            </div> -->
             <!-- Recipe Card 3 -->
+            <!--
             <div class="bg-white p-4 shadow">
                 <img src="images/dinner-3.jpg" alt="Dinner Image" class="w-full h-38 object-cover mb-4 rounded-lg">
                 <h2 class="text-xl font-bold mb-2">Dinner Delights</h2>
                 <p class="text-gray-600 mb-4">A nutritious green smoothie with spinach, banana, and almond milk.</p>
-                <a href="#" class="text-pink-500 hover:underline font-semibold">View Recipe</a>
-            </div>
-        </div>
+                <a href="#" class="text-pink-500 hover:underline font-semibold">View Recipes</a>
+            </div> -->
     </section>
 
     <!-- Footer -->
@@ -80,6 +88,7 @@
             <p>&copy; 2023 Food 4 Foodies Website. Team-8.</p>
         </div>
     </footer>
-
+    <script src="./Assets/script.js"></script>
 </body>
+
 </html>
