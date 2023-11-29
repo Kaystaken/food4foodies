@@ -50,9 +50,9 @@
     <!-- Main Content (Recipes) -->
     <section class="container mx-auto my-8">
         <h1 class="text-3xl font-bold mb-4">Healthy Recipes</h1>
-        <button href="#" class="text-pink-500 hover:underline font-semibold" id="breakfastSearch">Breakfast</button>
-        <button href="#" class="text-pink-500 hover:underline font-semibold" id="lunchSearch">Lunch</button>
-        <button href="#" class="text-pink-500 hover:underline font-semibold" id="dinnerSearch">Dinner</button>
+        <button onclick="getRecipe('breakfast')" href="#" class="text-pink-500 hover:underline font-semibold meal" id="breakfastSearch">Breakfast</button>
+        <button onclick="getRecipe('lunch')" href="#" class="text-pink-500 hover:underline font-semibold meal" id="lunchSearch">Lunch</button>
+        <button onclick="getRecipe('dinner')" href="#" class="text-pink-500 hover:underline font-semibold meal" id="dinnerSearch">Dinner</button>
 
         <!-- Recipe Cards -->
         <div id="recipeCards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
