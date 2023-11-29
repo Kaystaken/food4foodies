@@ -13,6 +13,7 @@ let getRecipe = function (meal) {
             // request successful
             if (response.ok) {
                 response.json().then(function (data) {
+                    document.getElementById('recipeCards').replaceChildren(); 
                     data.hits.forEach((currentRecipe) => {
                         let recipeCard = document.createElement('div');
                         recipeCard.classList.add('bg-white', 'p-4', 'shadow');
@@ -26,7 +27,7 @@ let getRecipe = function (meal) {
                         let recipeUrl = document.createElement('a');
                         recipeUrl.classList.add('text-pink-500', 'hover:underline', 'font-semibold');
                         recipeUrl.href = currentRecipe.recipe.url;
-                        recipeUrl.innerHTML = 'viewRecipe';
+                        recipeUrl.innerHTML = 'View Recipe';
                         recipeCard.appendChild(recipeUrl);
                         document.getElementById('recipeCards').appendChild(recipeCard);
                     })
@@ -44,12 +45,9 @@ let getRecipe = function (meal) {
 };
 
 
-
-let recipeList = document.querySelector('ul')
-let searchButton = document.querySelector("#breakfastSearch");
-// adds event listener to button (fetchData) when clicked
-searchButton.addEventListener("click", () => {
-    console.log("button clicked");
-    const breakfastData = getRecipe('breakfast');
-})
-
+/*let searchButton = document.querySelector("#breakfastSearch");
+// adds event listener to button (getRecipe) when clicked
+searchButton.addEventListener("click", (e) => {
+    console.log(e);
+}
+*/
