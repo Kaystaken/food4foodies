@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,17 +11,19 @@
 </head>
 
 <body class="h-72 bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600">
+
     <!-- Navigation -->
-    <nav class="bg-pink-700 text-white p-6">
-        <div class="container mx-auto flex justify-between items-center w-[95%]">
-            <a href="/" class="text-4xl font-bold">Food 4 Foodies<span class="text-yellow-300">Website</span></a>
-            <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
-                <li><a href="/" class="hover:text-yellow-400 text-3xl font-semibold">Home</a></li>
-                <li><a class="hover:text-yellow-400 text-3xl font-semibold" href="#About-Us">About Us</a></li>
-                <li><a class="hover:text-yellow-400 text-3xl font-semibold" href="#Recipe-Search">Recipe Search</a></li>
-                <li><a class="hover:text-yellow-400 text-3xl font-semibold" href="#Shop-Our-Store">Shop</a></li>
-            </ul>
-        </div>
+    <nav class="bg-pink-700 text-white p-4">
+      <div class="container mx-auto flex justify-between items-center w-[95%]">
+          <img src="images/v-logo.png">
+          <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+              <li><a href="/" class="hover:text-yellow-400 text-2xl font-semibold" href="#">Home</a></li>
+              <li><a class="hover:text-yellow-400 text-2xl font-semibold" href="#About-Us">About Us</a></li>
+              <li><a class="hover:text-yellow-400 text-2xl font-semibold" href="#Recipe-Search">Recipe Search</a></li>
+              <li><a class="hover:text-yellow-400 text-2xl font-semibold" href="#Shop-Products">Shop</a></li>
+              <li><a class="hover:text-yellow-400 text-2xl font-semibold" href="#">Get in Touch</a></li>
+          </ul>
+      </div>
     </nav>
 
     <!-- Hero Section with Image and Overlay -->
@@ -93,8 +94,8 @@
     </div>
 
     <!-- Main Content (Recipes) -->
-    <section class="container mx-auto my-8">
-        <h1 class="text-3xl font-bold mb-4">Healthy Recipes</h1>
+    <section class="container mx-auto my-16">
+      <h1 class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl mb-12">Top Searched Recipes</h1>
         <button onclick="getRecipe('breakfast')" href="#" class="text-pink-500 hover:underline font-semibold meal" id="breakfastSearch">Breakfast</button>
         <button onclick="getRecipe('lunch')" href="#" class="text-pink-500 hover:underline font-semibold meal" id="lunchSearch">Lunch</button>
         <button onclick="getRecipe('dinner')" href="#" class="text-pink-500 hover:underline font-semibold meal" id="dinnerSearch">Dinner</button>
