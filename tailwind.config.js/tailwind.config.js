@@ -10,6 +10,7 @@ module.exports = {
     },
     extend: {
       colors: {
+<<<<<<< HEAD
         brightRed: 'hsl(12, 88%, 59%)',
         brightRedLight: 'hsl(12, 88%, 69%)',
         brightRedSupLight: 'hsl(12, 88%, 95%)',
@@ -19,6 +20,12 @@ module.exports = {
         veryPaleRed: 'hsl(13, 100%, 96%)',
         veryLightGray: 'hsl(0, 0%, 98%)',
       },
+=======
+        beige: 'fffede',
+        orange: '#f9842d',
+        pink: '#cd2051',
+        blue: '#296089',
+>>>>>>> main
     },
   },
   plugins: [],
