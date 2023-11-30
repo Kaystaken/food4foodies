@@ -15,15 +15,19 @@ let getRecipe = function (meal) {
                 response.json().then(function (data) {
                     document.getElementById('recipeCards').replaceChildren(); 
                     data.hits.forEach((currentRecipe) => {
+                        // creating cards to display each HIT from the api
                         let recipeCard = document.createElement('div');
+                        // image hit to display
                         recipeCard.classList.add('bg-white', 'p-4', 'shadow');
                         let img = document.createElement('img');
                         img.src = currentRecipe.recipe.image
                         recipeCard.appendChild(img);
+                        // label hit to display
                         let label = document.createElement('h2');
                         label.classList.add('text-xl', 'font-bold', 'mb-8');
                         label.innerHTML = currentRecipe.recipe.label;
                         recipeCard.appendChild(label);
+                        // link to external url (original recipe url)
                         let recipeUrl = document.createElement('a');
                         recipeUrl.classList.add('text-pink-500', 'hover:underline', 'font-semibold');
                         recipeUrl.href = currentRecipe.recipe.url;
@@ -32,22 +36,14 @@ let getRecipe = function (meal) {
                         document.getElementById('recipeCards').appendChild(recipeCard);
                     })
                 });
-                // request failed/error
+                // request failed/error logged in console
             } else {
                 console.log("Error: " + response.statusText);
             }
         })
 
-        // alerts user of no response
+        // logs no response in console
         .catch(function (error) {
-            console.log("Cannot connect to Edamam.");
+            console.log("Cannot connect to Edamam servers.");
         })
 };
-
-
-/*let searchButton = document.querySelector("#breakfastSearch");
-// adds event listener to button (getRecipe) when clicked
-searchButton.addEventListener("click", (e) => {
-    console.log(e);
-}
-*/
