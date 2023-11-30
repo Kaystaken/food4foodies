@@ -1,7 +1,3 @@
-//let requestUrl = 'https://api.edamam.com/api/recipes/v2?type=any&app_id=29fea8d3&app_key=5f514c87c541768c9fc42178e830dac2&q=breakfast'
-//let APP_ID = "29fea8d3"
-//let API_KEY = "5f514c87c541768c9fc42178e830dac2"
-
 let getRecipe = function (meal) {
     // save to localStorage
     localStorage.setItem('lastVisited', meal);
@@ -50,9 +46,6 @@ let getRecipe = function (meal) {
         })
 };
 
-
-
-
 let getCanadian = function () {
     // save to localStorage
     localStorage.setItem('lastVisited', 'canadian');
@@ -69,20 +62,23 @@ let getCanadian = function () {
                     //console.log(data);
                     data.meals.forEach((currentRecipe) => {
                         let recipeCard = document.createElement('div');
-                        //image hit to display
+                        //image data to display
                         recipeCard.classList.add('bg-white', 'p-4', 'shadow');
                         let img = document.createElement('img');
                         img.src = currentRecipe.strMealThumb;
                         recipeCard.appendChild(img);
-                        //meal label to display
+                        //meal label data to display
                         let label = document.createElement('h2');
                         label.classList.add('text-xl', 'font-bold', 'mb-8');
                         let strMeal = currentRecipe.strMeal;
                         label.innerHTML = strMeal;
                         recipeCard.appendChild(label);
                         //link to external url (original recipe url)
+                        //external url not provided in the data fetched - customizing redirection
                         let id = currentRecipe.idMeal;
+                        //external url for original recipe on mealdb 
                         let mealDbUrl = 'https://themealdb.com/meal/' + id + '-' + strMeal;
+                        //displays a link to go to selected original recipe within card with customized url
                         let recipeUrl = document.createElement('a');
                         recipeUrl.classList.add('text-pink-500', 'hover:underline', 'font-semibold');
                         recipeUrl.innerHTML = 'View Recipe';
@@ -103,7 +99,7 @@ let getCanadian = function () {
         })
 };
 
-//loads user's last visited recipes (breakfast, lunch, dinner, canadian)
+//loads user's last visited recipes (breakfast, lunch, dinner, canadian) from localStorage
 window.onload = function () {
     let lastVisited = localStorage.getItem('lastVisited');
     if (lastVisited == 'canadian') {
