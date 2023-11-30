@@ -16,11 +16,13 @@ The site is filled with many recipe options for anytime of the day with the abil
 
 ### Learnings
 
-We learned so much during this project. Working as a team for the first time using the project dsection in GitHub. Having daily scrums, and communicating ideas using/updating the Kanban board. working with a new styling platform called Tailwind and reading and understanding the documentation. We learned to check APIs and that need to be obtained before starting the project so time isn't wasted and to accept failure but not quit. Doing pull requests and merging protected branches.
+We learned so much during this project. Working as a team for the first time using the project section in GitHub. Having daily scrums, and communicating ideas, using/updating the Kanban board. Working with a new styling platform called Tailwind and reading and understanding the documentation. We learned to check APIs and that they need to be obtained before starting the project so time isn't wasted and to accept failure but not quit. Doing pull requests and merging protected branches. Merge conflict resolution. Working with google doc presentation slides.
 
 ## 
 
 ## Usage
+
+Tailwind, Google Docs, Visual Studios Code, GitHub, CSS, JavaScript, jQuery, HTML
 
 *****link to deployed repo and image of deployed repo here****
 
