@@ -24,7 +24,9 @@ We learned so much during this project. Working as a team for the first time usi
 
 Tailwind, Google Docs, Visual Studios Code, GitHub, CSS, JavaScript, jQuery, HTML
 
-*****link to deployed repo and image of deployed repo here****
+<img width="1907" alt="Screenshot 2023-11-30 at 6 35 28 PM" src="https://github.com/Kaystaken/food4foodies/assets/148396597/2e83a4e9-2477-4e4d-87b8-b6521d410216">
+
+https://kaystaken.github.io/food4foodies
 
 ## Credits
 
